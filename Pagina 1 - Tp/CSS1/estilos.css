@@ -1,0 +1,266 @@
+/*Estilos de header, tamaño del encabezado, colores, fuente*/
+.header {
+    width: 100%;
+    height: 75px;
+    background-color: #FF0000;
+    position: fixed;
+    z-index: 10;
+    top: 0%;
+    left: 0%;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.4);
+    font-family: mifuente;
+}
+
+.containerH {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.Logo {
+    float: left;
+    line-height: 60px;
+}
+
+.Logo h1 {
+    color: #ffffff;
+    font-weight: 800;
+    font-size: 30px;
+    cursor: default;
+}
+
+.menu {
+   float: right;
+   height: 80px;
+}
+
+.menu a {
+    color: #ffffff;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 15px;
+    line-height: normal;
+    font-size: 20px;
+    font-weight: 400;
+    transition: all 500ms ease;
+    border-bottom: 4px solid transparent;
+}
+
+.menu a:hover {
+    color: #000;
+    border-bottom: 4px solid #000;
+}
+/*Estilos del cuerpo*/
+
+body {
+    background-color: #ffffff;
+}
+
+/*Estilos del titulo*/
+.title {
+    color: #000;
+    text-align: center;
+    font-size: 30px;
+    height: 10px;
+    font-family: mifuente;
+}
+
+/*Estilos del subtitulo*/
+.Subtitle {
+    color: #000;
+    text-align: center;
+    font-size: 35px;
+    margin: 30px;
+    font-family: mifuente;
+}
+
+/*Estilos de imagen*/
+.Img1 {
+    width: 300px;
+    height: 300px;
+    margin: 10px 30px;
+    box-shadow: 0px 1px 10px #FF0000;
+}
+
+.Img2 {
+    margin: 30px;
+}
+
+/*Estilos de la lista*/
+.list{
+    width: 360px;
+	margin: 10px 30px;
+	border: 8px solid #000;
+    text-align: justify;
+    background-color: #ffffff;
+    font-family: mifuente;
+}
+
+/*Estilos del slider, tamaño y tiempo de animacion*/
+.Slider {
+    width: 95%;
+    margin: 30px;
+    overflow: hidden;
+}
+
+@media(max-width: 767px){
+    .Slider {
+        width: 50%;
+        margin-bottom: 30px;
+}
+}
+
+
+.Slider ul {
+    display: flex;
+    padding: 0;
+    width: 700%;
+
+    animation: cambio 20s infinite;
+    animation-direction: alternate;
+}
+
+.Slider li {
+    width: 100%;
+    list-style: none;
+}
+
+.Slider img {
+    width: 100%;
+}
+
+
+@keyframes cambio {
+    0% { margin-left: 0;}
+    14% {margin-left: 0;}
+
+    18% {margin-left: -100%;}
+    28% {margin-left: -100%;}
+
+    31% {margin-left: -200%;}
+    43% {margin-left: -200%;}
+
+    46% {margin-left: -300%;}
+    58% {margin-left: -300%;}
+
+    61% {margin-left: -400%;}
+    73% {margin-left: -400%;}
+
+    76% {margin-left: -500%;}
+    88% {margin-left: -500%;}
+
+    91% {margin-left: -600%;}
+    100% {margin-left: -600%;}
+
+}
+
+/*Estilos del texto*/
+.texttitle {
+    color: #000;
+    text-align: left;
+    font-family: 'Titillium Web';
+    font-size: 30px;
+}
+
+.text {
+    text-align: justify;
+    margin: 30px;
+    font-family: 'Titillium Web';
+}
+
+/*Estilos del footer, tamaño, color, iconos*/
+.container {
+    max-width: 1170;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul {
+    list-style: none;
+}
+
+.footer {
+    background-color: #24262b;
+    padding: 10px 0;
+    font-family: mifuente;
+}
+
+.footer-col {
+    width: 25%;
+    padding: 0 15px;
+}
+
+.footer-col h4{
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+}
+
+.footer-col h4::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #e91e63;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+
+.footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+    color: #ffffff;
+    padding-left: 8px;
+}
+
+.footer-col .Social-links a {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255,255,255,0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+}
+
+.footer-col .Social-links a:hover {
+    color: #24262b;
+    background-color: #ffffff;
+
+}
+
+@media(max-width: 767px){
+    .footer-col {
+        width: 50%;
+        margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+    .footer-col {
+        width: 100%;
+}
+}  

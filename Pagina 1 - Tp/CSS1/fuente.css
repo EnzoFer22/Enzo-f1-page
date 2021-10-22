@@ -1,0 +1,6 @@
+
+/*Seleccion de la fuente personalizada*/
+@font-face {
+	font-family: mifuente;
+	src: url('../Fonts/F1.ttf')
+}
